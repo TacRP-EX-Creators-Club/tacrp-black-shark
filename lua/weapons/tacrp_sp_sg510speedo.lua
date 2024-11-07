@@ -8,7 +8,7 @@ SWEP.PrintName = "SG 510 \"Black Shark\""
 SWEP.AbbrevName = "Black Shark"
 SWEP.Category = "Tactical RP (Bonus)"
 
-SWEP.SubCatTier = "1Elite"
+SWEP.SubCatTier = "0Exotic"
 SWEP.SubCatType = "5Battle Rifle"
 
 SWEP.Description = "A customized SG 510 with a chopped barrel and a serious muzzle brake, producing low recoil and a spectacular muzzleflash."
@@ -33,8 +33,8 @@ SWEP.Slot = 2
 
 SWEP.BalanceStats = {
     [TacRP.BALANCE_SBOX] = {
-        Damage_Max = 40,
-        Damage_Min = 34,
+        Damage_Max = 38,
+        Damage_Min = 30,
 
         BodyDamageMultipliers = {
             [HITGROUP_HEAD] = 4,
@@ -81,11 +81,11 @@ SWEP.TTTReplace = TacRP.TTTReplacePreset.AssaultRifle
 
 // "ballistics"
 
-SWEP.Damage_Max = 30
-SWEP.Damage_Min = 22
-SWEP.Range_Min = 1000 // distance for which to maintain maximum damage
-SWEP.Range_Max = 4200 // distance at which we drop to minimum damage
-SWEP.Penetration = 8 // units of metal this weapon can penetrate
+SWEP.Damage_Max = 42
+SWEP.Damage_Min = 30
+SWEP.Range_Min = 400 // distance for which to maintain maximum damage
+SWEP.Range_Max = 4000 // distance at which we drop to minimum damage
+SWEP.Penetration = 11 // units of metal this weapon can penetrate
 SWEP.ArmorPenetration = 0.775
 
 SWEP.BodyDamageMultipliers = {
@@ -99,7 +99,7 @@ SWEP.BodyDamageMultipliers = {
     [HITGROUP_GEAR] = 0.9
 }
 
-SWEP.MuzzleVelocity = 24000
+SWEP.MuzzleVelocity = 27000
 
 // misc. shooting
 
@@ -109,16 +109,16 @@ SWEP.RPM = 575
 
 SWEP.PostBurstDelay = 0.1
 
-SWEP.Spread = 0.0024
+SWEP.Spread = 0.002
 
 SWEP.RecoilResetInstant = false
 SWEP.RecoilPerShot = 1
-SWEP.RecoilMaximum = 15
-SWEP.RecoilResetTime = 0.025
+SWEP.RecoilMaximum = 8
+SWEP.RecoilResetTime = 0.03
 SWEP.RecoilDissipationRate = 32
 SWEP.RecoilFirstShotMult = 1.25 // multiplier for the first shot's recoil amount
 
-SWEP.RecoilVisualKick = 6
+SWEP.RecoilVisualKick = 4
 SWEP.RecoilKick = 2
 SWEP.RecoilStability = 1
 
@@ -130,10 +130,10 @@ SWEP.CanBlindFire = true
 // handling
 
 SWEP.MoveSpeedMult = 0.875
-SWEP.ShootingSpeedMult = 0.45
-SWEP.SightedSpeedMult = 0.6
+SWEP.ShootingSpeedMult = 0.3
+SWEP.SightedSpeedMult = 0.65
 
-SWEP.ReloadSpeedMult = 0.55
+SWEP.ReloadSpeedMult = 0.5
 
 SWEP.AimDownSightsTime = 0.38
 SWEP.SprintToFireTime = 0.4
