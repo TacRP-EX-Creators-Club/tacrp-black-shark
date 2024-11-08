@@ -15,15 +15,14 @@ SWEP.Description = "A customized SG 510 with a chopped barrel and a serious muzz
 SWEP.Description_Quote = "\"My armor's black. That doesn't mean my heart is as well.\"" -- Toa Onua in Bionicle: Swamp of Secrets
 
 SWEP.Trivia_Caliber = "7.5x55mm"
-SWEP.Trivia_Manufacturer = "SIG Sauer AG"
-SWEP.Trivia_Year = "1957"
+SWEP.Trivia_Manufacturer = "Vanderbilt Company" // Fictional
+SWEP.Trivia_Year = "2001"
 
 SWEP.Faction = TacRP.FACTION_NEUTRAL
 SWEP.Credits = [[
 Custom built by speedonerd
-Assets: World of Guns: Disassembly
+Assets: World of Guns: Disassembly, Tactical Intervention
 Sounds: Sledgehammer Games, speedonerd
-Animations: Tactical Intervention
 ]]
 
 SWEP.ViewModel = "models/weapons/tacint_shark/v_sg510_speedospecial.mdl"
@@ -129,8 +128,8 @@ SWEP.CanBlindFire = true
 
 // handling
 
-SWEP.MoveSpeedMult = 0.875
-SWEP.ShootingSpeedMult = 0.3
+SWEP.MoveSpeedMult = 0.85
+SWEP.ShootingSpeedMult = 0.25
 SWEP.SightedSpeedMult = 0.65
 
 SWEP.ReloadSpeedMult = 0.5
@@ -169,8 +168,8 @@ SWEP.HolsterSlot = TacRP.HOLSTER_SLOT_BACK
 SWEP.HolsterPos = Vector(5, 0, -6)
 SWEP.HolsterAng = Angle(0, 0, 0)
 
-SWEP.Sway = 1.4
-SWEP.ScopedSway = 0.2
+SWEP.Sway = 1.5
+SWEP.ScopedSway = 0.25
 
 SWEP.Bipod = true
 SWEP.BipodRecoil = 0.2
@@ -178,10 +177,10 @@ SWEP.BipodKick = 0.5
 
 // reload
 
-SWEP.ClipSize = 24
+SWEP.ClipSize = 30 // supposed to be using 30-round Lmg 25 magazines
 SWEP.Ammo = "ar2"
 
-SWEP.ReloadTimeMult = 1.25
+SWEP.ReloadTimeMult = 1.32
 SWEP.DropMagazineModel = "models/weapons/tacint_shark/magazines/sg510_speedospecial.mdl"
 SWEP.DropMagazineImpact = "metal"
 
@@ -193,11 +192,11 @@ SWEP.DropMagazineTime = 0.6
 local path = "tacrp/weapons/sg551/sg551_"
 local path1 = "tacint_shark/weapons/sg510_speedospecial/"
 
-SWEP.Sound_Shoot = "^" .. path1 .. "ricospecial_unsil.wav"
+SWEP.Sound_Shoot = "^" .. path1 .. "ricospecial_unsil-1.wav"
 SWEP.Sound_Shoot_Silenced = "^tacrp/weapons/dsa58/dsa58_fire_silenced-1.wav"
 
-SWEP.Vol_Shoot = 110
-SWEP.ShootPitchVariance = 2.5 // amount to vary pitch by each shot
+SWEP.Vol_Shoot = 130
+SWEP.ShootPitchVariance = 5.5 // amount to vary pitch by each shot
 
 // effects
 
