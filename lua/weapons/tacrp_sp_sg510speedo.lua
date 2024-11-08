@@ -12,15 +12,15 @@ SWEP.SubCatTier = "0Exotic"
 SWEP.SubCatType = "5Battle Rifle"
 
 SWEP.Description = "A customized SG 510 with a chopped barrel and a serious muzzle brake, producing low recoil and a spectacular muzzleflash."
-SWEP.Description_Quote = "\"I think I can actually feel that in my teeth!\"" -- Ian McCollum of Forgotten Weapons firing the "Rico Special" https://www.youtube.com/watch?v=oU_sOb7Fkdo
+SWEP.Description_Quote = "\"My armor's black. That doesn't mean my heart is as well.\"" -- Toa Onua in Bionicle: Swamp of Secrets
 
 SWEP.Trivia_Caliber = "7.5x55mm"
 SWEP.Trivia_Manufacturer = "SIG Sauer AG"
 SWEP.Trivia_Year = "1957"
 
-SWEP.Faction = TacRP.FACTION_MILITIA
+SWEP.Faction = TacRP.FACTION_NEUTRAL
 SWEP.Credits = [[
-Custom edited by speedonerd
+Custom built by speedonerd
 Assets: World of Guns: Disassembly
 Sounds: Sledgehammer Games, speedonerd
 Animations: Tactical Intervention
@@ -206,7 +206,7 @@ SWEP.QCA_Muzzle = 1
 // ditto for shell
 SWEP.QCA_Eject = 2
 
-SWEP.MuzzleEffect = "muzzleflash_shotgun"
+SWEP.MuzzleEffect = "muzzleflash_m82_tacrp"
 SWEP.EjectEffect = 2
 
 // anims
