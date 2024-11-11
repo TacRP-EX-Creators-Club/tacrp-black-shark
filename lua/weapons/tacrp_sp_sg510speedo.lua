@@ -243,11 +243,11 @@ SWEP.AttachmentElements = {
             {3, 1},
         },
     },
-	["muzzle"] = {
-		BGs_VM = {
-			{4, 1},
-		},
-	},
+    ["muzzle"] = {
+        BGs_VM = {
+            {4, 1},
+        },
+    },
 }
 
 SWEP.NoRMR = true
@@ -267,21 +267,21 @@ SWEP.Attachments = {
         Ang_VM = Angle(90, 0, 0),
         Ang_WM = Angle(0, 0, 180),
     },
-    --[2] = {
-        --PrintName = "Muzzle",
-        --Category = "silencer",
-		--InstalledElements = {"muzzle"},
-        --Bone = "ValveBiped.sg551_rootbone",
-        --WMBone = "ValveBiped.Bip01_R_Hand",
-        --AttachSound = "tacrp/weapons/silencer_on.wav",
-        --DetachSound = "tacrp/weapons/silencer_off.wav",
-        --VMScale = 1,
-        --Pos_VM = Vector(-3.85, 0.05, 28.7),
-        --Pos_WM = Vector(32, 1.25, -5.1),
-        --Ang_VM = Angle(90, 0, 0),
-        --Ang_WM = Angle(0, 0, 180),
-    --},
     [2] = {
+        PrintName = "Muzzle",
+        Category = "barrel",
+        -- InstalledElements = {"muzzle"},
+        Bone = "ValveBiped.sg551_rootbone",
+        WMBone = "ValveBiped.Bip01_R_Hand",
+        AttachSound = "tacrp/weapons/silencer_on.wav",
+        DetachSound = "tacrp/weapons/silencer_off.wav",
+        VMScale = 1,
+        Pos_VM = Vector(-3.85, 0.05, 28.7),
+        Pos_WM = Vector(32, 1.25, -5.1),
+        Ang_VM = Angle(90, 0, 0),
+        Ang_WM = Angle(0, 0, 180),
+    },
+    [3] = {
        PrintName = "Tactical",
         Category = {"tactical", "tactical_zoom", "tactical_ebullet"},
         Bone = "ValveBiped.sg551_rootbone",
@@ -293,31 +293,31 @@ SWEP.Attachments = {
         Ang_VM = Angle(90, 0, -90),
         Ang_WM = Angle(0, 0, -90),
     },
-    [3] = {
+    [4] = {
         PrintName = "Accessory",
         Category = {"acc", "acc_extmag_rifle2", "acc_sling", "acc_duffle"},
         AttachSound = "TacRP/weapons/flashlight_on.wav",
         DetachSound = "TacRP/weapons/flashlight_off.wav",
     },
-    [4] = {
+    [5] = {
         PrintName = "Bolt",
         Category = {"bolt_automatic"},
         AttachSound = "TacRP/weapons/flashlight_on.wav",
         DetachSound = "TacRP/weapons/flashlight_off.wav",
     },
-    [5] = {
+    [6] = {
         PrintName = "Trigger",
         Category = {"trigger_auto"},
         AttachSound = "TacRP/weapons/flashlight_on.wav",
         DetachSound = "TacRP/weapons/flashlight_off.wav",
     },
-    [6] = {
+    [7] = {
         PrintName = "Ammo",
         Category = {"ammo_rifle"},
         AttachSound = "TacRP/weapons/flashlight_on.wav",
         DetachSound = "TacRP/weapons/flashlight_off.wav",
     },
-    [7] = {
+    [8] = {
         PrintName = "Perk",
         Category = {"perk", "perk_melee", "perk_shooting", "perk_reload"},
         AttachSound = "tacrp/weapons/flashlight_on.wav",
