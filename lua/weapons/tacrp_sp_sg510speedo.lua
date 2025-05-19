@@ -1,3 +1,9 @@
+-- I am the beast in the water. I stalk the deep.
+-- I do not fear my enemies. My enemies must fear me.
+-- I will pay them no mind, until they come my way.
+-- They try and touch me, I will bear my teeth.
+-- Trans rights are human rights.
+
 SWEP.Base = "tacrp_base"
 SWEP.Spawnable = true
 
@@ -11,10 +17,10 @@ SWEP.Category = "Tactical RP (Bonus)"
 SWEP.SubCatTier = "0Exotic"
 SWEP.SubCatType = "5Battle Rifle"
 
-SWEP.Description = "A customized SG 510 with a chopped barrel and a serious muzzle brake, producing low recoil and a spectacular muzzleflash."
+SWEP.Description = "A customized battle rifle, chambered for a magnum hunting round that announces its presence with a thunderous bang and bombastic muzzleflash."
 SWEP.Description_Quote = "\"My armor's black. That doesn't mean my heart is as well.\"" -- Toa Onua in Bionicle: Swamp of Secrets
 
-SWEP.Trivia_Caliber = "7.5x55mm"
+SWEP.Trivia_Caliber = ".375 H&H Magnum"
 SWEP.Trivia_Manufacturer = "Vanderbilt Company" // Fictional
 SWEP.Trivia_Year = "2001"
 
@@ -32,8 +38,8 @@ SWEP.Slot = 2
 
 SWEP.BalanceStats = {
     [TacRP.BALANCE_SBOX] = {
-        Damage_Max = 38,
-        Damage_Min = 30,
+        Damage_Max = 42,
+        Damage_Min = 34,
 
         BodyDamageMultipliers = {
             [HITGROUP_HEAD] = 4,
@@ -47,11 +53,11 @@ SWEP.BalanceStats = {
         },
     },
     [TacRP.BALANCE_TTT] = {
-        Damage_Max = 16,
-        Damage_Min = 12,
+        Damage_Max = 18,
+        Damage_Min = 13,
         Range_Min = 800,
         Range_Max = 2000,
-        RPM = 600,
+        RPM = 425,
 
         RecoilSpreadPenalty = 0.0025,
 
@@ -80,8 +86,8 @@ SWEP.TTTReplace = TacRP.TTTReplacePreset.AssaultRifle
 
 // "ballistics"
 
-SWEP.Damage_Max = 42
-SWEP.Damage_Min = 30
+SWEP.Damage_Max = 50
+SWEP.Damage_Min = 28
 SWEP.Range_Min = 400 // distance for which to maintain maximum damage
 SWEP.Range_Max = 4000 // distance at which we drop to minimum damage
 SWEP.Penetration = 11 // units of metal this weapon can penetrate
@@ -89,7 +95,7 @@ SWEP.ArmorPenetration = 0.775
 
 SWEP.BodyDamageMultipliers = {
     [HITGROUP_HEAD] = 3.5,
-    [HITGROUP_CHEST] = 1,
+    [HITGROUP_CHEST] = 1.15,
     [HITGROUP_STOMACH] = 1,
     [HITGROUP_LEFTARM] = 1,
     [HITGROUP_RIGHTARM] = 1,
@@ -102,9 +108,9 @@ SWEP.MuzzleVelocity = 27000
 
 // misc. shooting
 
-SWEP.Firemodes = {1, 2}
+SWEP.Firemodes = {2, 1}
 
-SWEP.RPM = 575
+SWEP.RPM = 400
 
 SWEP.PostBurstDelay = 0.1
 
@@ -112,12 +118,12 @@ SWEP.Spread = 0.002
 
 SWEP.RecoilResetInstant = false
 SWEP.RecoilPerShot = 1
-SWEP.RecoilMaximum = 8
+SWEP.RecoilMaximum = 16
 SWEP.RecoilResetTime = 0.03
 SWEP.RecoilDissipationRate = 32
 SWEP.RecoilFirstShotMult = 1.25 // multiplier for the first shot's recoil amount
 
-SWEP.RecoilVisualKick = 4
+SWEP.RecoilVisualKick = 5
 SWEP.RecoilKick = 2
 SWEP.RecoilStability = 1
 
@@ -177,8 +183,8 @@ SWEP.BipodKick = 0.5
 
 // reload
 
-SWEP.ClipSize = 30 // supposed to be using 30-round Lmg 25 magazines
-SWEP.Ammo = "ar2"
+SWEP.ClipSize = 25 // supposed to be using 30-round Lmg 25 magazines
+SWEP.Ammo = "357"
 
 SWEP.ReloadTimeMult = 1.32
 SWEP.DropMagazineModel = "models/weapons/tacint_shark/magazines/sg510_speedospecial.mdl"
@@ -192,7 +198,7 @@ SWEP.DropMagazineTime = 0.6
 local path = "tacrp/weapons/sg551/sg551_"
 local path1 = "tacint_shark/weapons/sg510_speedospecial/"
 
-SWEP.Sound_Shoot = "^" .. path1 .. "ricospecial_unsil-1.wav"
+SWEP.Sound_Shoot = "^" .. path1 .. "ricospecial_unsil-2.wav"
 SWEP.Sound_Shoot_Silenced = "^tacrp/weapons/dsa58/dsa58_fire_silenced-1.wav"
 
 SWEP.Vol_Shoot = 130
@@ -205,7 +211,7 @@ SWEP.QCA_Muzzle = 1
 // ditto for shell
 SWEP.QCA_Eject = 2
 
-SWEP.MuzzleEffect = "muzzleflash_m82_rico"
+SWEP.MuzzleEffect = "muzzleflash_m82"
 SWEP.EjectEffect = 2
 
 // anims
