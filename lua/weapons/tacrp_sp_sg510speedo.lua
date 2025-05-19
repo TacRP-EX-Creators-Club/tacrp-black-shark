@@ -20,7 +20,7 @@ SWEP.SubCatType = "5Battle Rifle"
 SWEP.Description = "A customized battle rifle, chambered for a magnum hunting round that announces its presence with a thunderous bang and bombastic muzzleflash."
 SWEP.Description_Quote = "\"My armor's black. That doesn't mean my heart is as well.\"" -- Toa Onua in Bionicle: Swamp of Secrets
 
-SWEP.Trivia_Caliber = ".375 H&H Magnum"
+SWEP.Trivia_Caliber = "7.5x55mm"
 SWEP.Trivia_Manufacturer = "Vanderbilt Company" // Fictional
 SWEP.Trivia_Year = "2001"
 
@@ -38,8 +38,8 @@ SWEP.Slot = 2
 
 SWEP.BalanceStats = {
     [TacRP.BALANCE_SBOX] = {
-        Damage_Max = 42,
-        Damage_Min = 34,
+        Damage_Max = 38,
+        Damage_Min = 30,
 
         BodyDamageMultipliers = {
             [HITGROUP_HEAD] = 4,
@@ -57,7 +57,7 @@ SWEP.BalanceStats = {
         Damage_Min = 13,
         Range_Min = 800,
         Range_Max = 2000,
-        RPM = 425,
+        RPM = 525,
 
         RecoilSpreadPenalty = 0.0025,
 
@@ -72,22 +72,14 @@ SWEP.BalanceStats = {
             [HITGROUP_GEAR] = 0.9
         },
     },
-    [TacRP.BALANCE_PVE] = {
-        Damage_Max = 12,
-        Damage_Min = 9,
-    },
-    [TacRP.BALANCE_OLDSCHOOL] = {
-        RecoilMaximum = 20,
-        RecoilDissipationRate = 18
-    }
 }
 
 SWEP.TTTReplace = TacRP.TTTReplacePreset.AssaultRifle
 
 // "ballistics"
 
-SWEP.Damage_Max = 50
-SWEP.Damage_Min = 28
+SWEP.Damage_Max = 42
+SWEP.Damage_Min = 30
 SWEP.Range_Min = 400 // distance for which to maintain maximum damage
 SWEP.Range_Max = 4000 // distance at which we drop to minimum damage
 SWEP.Penetration = 11 // units of metal this weapon can penetrate
@@ -110,21 +102,19 @@ SWEP.MuzzleVelocity = 27000
 
 SWEP.Firemodes = {2, 1}
 
-SWEP.RPM = 400
-
-SWEP.PostBurstDelay = 0.1
+SWEP.RPM = 500
 
 SWEP.Spread = 0.002
 
 SWEP.RecoilResetInstant = false
 SWEP.RecoilPerShot = 1
-SWEP.RecoilMaximum = 16
+SWEP.RecoilMaximum = 8
 SWEP.RecoilResetTime = 0.03
 SWEP.RecoilDissipationRate = 32
 SWEP.RecoilFirstShotMult = 1.25 // multiplier for the first shot's recoil amount
 
-SWEP.RecoilVisualKick = 5
-SWEP.RecoilKick = 2
+SWEP.RecoilVisualKick = 4
+SWEP.RecoilKick = 1
 SWEP.RecoilStability = 1
 
 SWEP.RecoilSpreadPenalty = 0.0025
@@ -160,8 +150,8 @@ SWEP.PassivePos = Vector(0, -1, -6)
 SWEP.BlindFireAng = Angle(0, 5, 0)
 SWEP.BlindFirePos = Vector(3, -2, -5)
 
-SWEP.SprintAng = Angle(30, -15, 0)
-SWEP.SprintPos = Vector(5, 0, -2)
+SWEP.SprintAng = Angle(30, -12, 0)
+SWEP.SprintPos = Vector(5, -5, -4)
 
 SWEP.SightAng = Angle(0.2, 0.1, 0)
 SWEP.SightPos = Vector(-4.06, -7, -4.63)
@@ -183,8 +173,8 @@ SWEP.BipodKick = 0.5
 
 // reload
 
-SWEP.ClipSize = 25 // supposed to be using 30-round Lmg 25 magazines
-SWEP.Ammo = "357"
+SWEP.ClipSize = 30 // supposed to be using 30-round Lmg 25 magazines
+SWEP.Ammo = "ar2"
 
 SWEP.ReloadTimeMult = 1.32
 SWEP.DropMagazineModel = "models/weapons/tacint_shark/magazines/sg510_speedospecial.mdl"
@@ -211,7 +201,7 @@ SWEP.QCA_Muzzle = 1
 // ditto for shell
 SWEP.QCA_Eject = 2
 
-SWEP.MuzzleEffect = "muzzleflash_m82"
+SWEP.MuzzleEffect = "muzzleflash_m82_rico"
 SWEP.EjectEffect = 2
 
 // anims
