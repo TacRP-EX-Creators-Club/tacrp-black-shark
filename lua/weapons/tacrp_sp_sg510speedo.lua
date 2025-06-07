@@ -28,7 +28,7 @@ SWEP.Faction = TacRP.FACTION_NEUTRAL
 SWEP.Credits = [[
 Custom built by speedonerd
 Assets: World of Guns: Disassembly, Tactical Intervention
-Sounds: Sledgehammer Games, speedonerd
+Sounds: Sledgehammer Games, id Software
 ]]
 
 SWEP.ViewModel = "models/weapons/tacint_shark/v_sg510_speedospecial.mdl"
